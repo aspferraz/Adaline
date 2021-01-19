@@ -1,12 +1,12 @@
-
 import numpy as np
 
+
 class Adaline(object):
+
     def __init__(self, eta=0.0025, precision=0.000001, epoch=10000):
         self.eta = eta # learning rate
         self.precision = precision # exit condition
         self.epoch = epoch # max iters
-
 
     def fit(self, X, y):
         self.weight_ = np.random.uniform(0, 1, X.shape[1] + 1) # weights vector
