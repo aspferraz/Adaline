@@ -35,7 +35,6 @@ def run():
 
     plt.show()
 
-
     # load test dataset
     df = pd.read_csv('res/test.csv',header=None)
     print(df.head())
